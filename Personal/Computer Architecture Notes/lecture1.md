@@ -5,7 +5,7 @@
 
 **Computer engineering**: referred to the actual construction of a computer. 
 
-### Von-Neumann
+### Von-Neumann Architecture
 - A computer 
     - consists of **CPU**, **Memory**, and **IO**
     - is independent of the problem 
