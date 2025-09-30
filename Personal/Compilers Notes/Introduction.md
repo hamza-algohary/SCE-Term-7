@@ -21,21 +21,31 @@ Unanswered Exercises
 
 ### The structure of a Compiler
 Compiler has two parts
-- Analysis (frontend)
+- **Analysis** (frontend)
     - detects syntax or sematic errors.
     - genrates symbol table + code's intermediate representation
-- Synthesis (backend)
+- **Synthesis** (backend)
     - generates program based analysis output.
 
 They may be divided into 6 or 7 parts
-- Lexical Analyzer (Characters -> Tokens)
+- **Lexical Analyzer** (Characters ➝ Tokens)
     - A token may be tuple of (tokenName , attributeValue) (like: (id,0) for an identifier , (=,null) for assignment operator)
-- Syntax Analyzer (Tokens -> Syntax Tree)
-- Semantic Analyzer ()
-- Intermediate Code Generator
-- Intermediate Code Optimizer
-- Code Generator
+- **Syntax Analyzer** (Tokens ➝ Syntax Tree)
+- **Semantic Analyzer** (Syntax Tree ➝ Syntax Tree)
+    - checks the source program for semantic consistency with the language definition.
+    - gathers type information and saves it in either the syntax tree or the symbol table
+- **Intermediate Code Generator** (Syntax Tree ➝ Intermediate Code (eg. ***three address*** code) )
+    - easy to produce
+    - easy to transalte to target machine
+- **Intermediate Code Optimizer** (Code ➝ Code)
+    - produces better code (faster or smaller or whatever is the objective)
+- **Code Generator** (Intermediate Code ➝ Target Machine Code)
 
-**Note:** Code optimizer may exists for target machine code or intermediate code or both.
+**Note:** Code optimizer may exist for target machine code or intermediate code or both.
 
-**Up Next:** Semantic Analyzer
+**Symbol Table** is a structure containing all defined variabls/functions and their information.
+
+Multiple compiler phases may be grouped into **passes**. A **pass** is a component whose input & output are files.
+For example we may group phases from lexical analyzer to intermediate code generator in one pass, code optimizer in a second optional pass and target machine code generator a final pass.
+
+**Up Next:** 1.2.9 Compiler-Construction Tools
