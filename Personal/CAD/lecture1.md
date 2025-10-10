@@ -25,7 +25,7 @@ There are 3 matrices to describe network graphs
 
 **Fundamental Loop** is a loop composed of some of the tree branches and a link. So for each graph the number of fundamnetal loops equals number of links.
 
-**Fundamental Loop Matrix** is a matrix whose each row represents one the fundamental loops. <br/>
+**Fundamental Loop Matrix** is a matrix whose each row represents one of the fundamental loops. <br/>
 $ M_{i,j} = relation(i^{th} Fundamental Loop , j^{th} Edge In Graph) $ <br/>
 Where $ relation(loop,edge) $ = 
 - **+1** if *edge* has same direction as *loop*
@@ -33,3 +33,12 @@ Where $ relation(loop,edge) $ =
 - **0**  if *edge* is **NOT** in *loop*.
 
 Given that loop's direction is same as link's direction.
+
+**Fundamental Cut Set** (f-cut set) is a minimal set of branches, if cut, they split a graph into two isolated graphs.<br/> 
+In our case a **fundamental cut set** contains only one branch and one or more links. Therefore, **no. of fundamental cut sets = no. of branches** <br/>
+**Fundamental Cut Set Matrix** is a matrix whose each row represents a fundamental cut set. <br/>
+$ M_{i,j} = relation(i^{th} f\ cut\ set , j^{th} edge) $ <br/>
+Where $ relation(f\ cut\ set,edge) = $
+- **0** for uncut edges.
+- **+1** for cut edges with same direction as cut branch.
+- **-1** for cut edges with opposite direction.
