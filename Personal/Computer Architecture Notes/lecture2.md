@@ -24,7 +24,7 @@ Communication with memory requires:
 
 <!--slide 7-->
 
-$ k\ address\ lines \Rrightarrow 2^k\ words $
+$k\ address\ lines \Rrightarrow 2^k\ words$
 
 ### Conventions
 A memory of capacity $m.n$ bits means it has:
