@@ -36,4 +36,37 @@ A parse tree node may have many children, ordered from left to right. epsilon is
 
 A grammar is **ambiguous** if there is a string with two valid parse trees or more.
 
+**Operators Precedence** determines order of operations if for an expression with multiple operators.
+
+**Associativity of Operators** is a property that determines how operators of the same precedence are grouped in the absence of parentheses **OR** it means  when same operator appears in a row, then which operator occurence we apply first.
+
+**Left associative** means expression is evaluated from left to right, while **right associative** is the opposite.
+
+The grammar for a right associative operator is
+```
+expression => exprssion operator term | term
+```
+and for left associative,
+```
+expression => term operator expression | term
+```
+
+It makes more sense to assign all operators of same precedence the same associativity.
+
+To make a grammar with the normal arithmetic operators precedence, we put every precedence level in its own production:
+
+```
+plus_or_minus   => "+" | "-"
+times_or_divide => "*" | "/"
+expression      => expression plus_or_minus term
+term            => term times_or_divide factor
+factor          => number | "(" expression ")"
+```
+
+Read More: 
+- [What is associativity of operators and why is it important?](https://stackoverflow.com/questions/930486/what-is-associativity-of-operators-and-why-is-it-important)
+- [Why Associativity is a Fundamental Property of Operators But Not that of Precedence Levels?](https://stackoverflow.com/questions/11700550/why-associativity-is-a-fundamental-property-of-operators-but-not-that-of-precede)
+- [Generalizing the expression grammar with operators precedence: The Text Book page 50](quotes/page_50.md)
+
+
 #### Up Next: 2.2.5 Associativity of Operators (page 71)

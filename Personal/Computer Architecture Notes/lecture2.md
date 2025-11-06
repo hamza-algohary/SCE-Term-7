@@ -74,4 +74,14 @@ If number of address lines $K$ is even, then number of addresses (in address spa
 
 $$ \text{rows} = floor(K/2) , \text{columns} = \text{the rest} $$
 
+We can combine memories to form a larger memory. 
+- To increase number of words $\rightarrow$ increase address lines.
+- To increase word size $\rightarrow$ increase data lines. 
+
+$\text{columns} = \text{word size ratio}$<br>
+$\text{chips per column} = \text{address space ratio}$
+
+We need a decoder, whose output = number of chips per column.
+
+
 **Up Next** slide 30

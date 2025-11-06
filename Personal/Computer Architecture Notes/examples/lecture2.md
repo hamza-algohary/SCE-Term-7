@@ -27,7 +27,7 @@ $\sqrt{\text{total number of bits}} = \sqrt{16} = 2^2  \implies K/2 = 2$
 - Therefore, the row decoder takes its two MSBs,
 - And , the column decoder takes its two LSBs.
 
-#### Design 32k x 8 RAM using coincident selection?
+#### 4. Design 32k x 8 RAM using coincident selection?
 **Solution** <br>
 - Since, memory has 32K memory locations = 2^(15) 
 - Therefore, Physical address lines K = 15
@@ -45,3 +45,20 @@ $\sqrt{\text{total number of bits}} = \sqrt{16} = 2^2  \implies K/2 = 2$
     3. 64M × 64, and 
     4. 2G × 1.
 3. A 64K×16 RAM chip uses coincident decoding by splitting the internal decoder into row select and column select. Assuming that the RAM cell array is square, what is the size of each decoder, and how many AND gates are required for decoding an address?
+
+#### 5. Construct a 256k x 8 RAM using 64k x 8 RAM chips.
+**Solution** <br>
+1. number of chips / column = 2^(18) / 2^(16)  = 2^2  = 4
+2. number of columns = n1 / n2 = 8/8=1
+3. Decoder 2 x 4
+
+#### 6. Construct a 64K x 16 RAM using 64k x 8 RAM.
+**Solution** <br>
+![](../media/ram-combination.png)
+
+### Sheet
+1. Using the 64K × 8 RAM chip plus a decoder, construct the block diagram for a 512K × 16 RAM.
+2. 
+   1. *How many 128K × 16 RAM chips are needed to  provide a memory capacity of 2 MB = 1 M x 16 RAM?
+   2. How many address lines are required to  access 2  MB? How many of these lines are  connected to  the address inputs of all chips?
+
