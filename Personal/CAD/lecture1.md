@@ -10,8 +10,7 @@ A **subgraph** is a part of a graph. There are two types of importance to us:
 **Tree Branches** are branches in the tree. While, tree links are branches outside the tree.
 
 For a tree with **N** nodes & **B** branches and **L** links,
-- $ N = B $
-- $ L = B – (N-1) = B – N + 1 $
+$L = B – (N-1) = B – N + 1$
 
 There are 3 matrices to describe network graphs
 1. **Incidence Matrix**
