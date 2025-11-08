@@ -131,5 +131,24 @@ There are two mechanisms,
    
     On NAK, sender resends all frames starting from wronged frame. This minimizes buffer on receiver side, but there is a lot of duplication.
 
+------------------ Mid Term End ------------------
 
-### Up Next: Flow Control
+### Flow Control
+Idle RQ has built in flow control, and requires minimum buffer. 
+
+Selective repeat requires a flow control mechanism, otherwise it may need an indefinite buffer size. The flow control mechanism is **Sliding Window Flow Control**.
+
+Sliding window is basically maximum number of unacknowledged frames on retransmission list on sender side.
+
+A sliding window has a **LWE** (Lower Window Edge) and a **UWE** (Upper Window Edge). When a frame is sent UWE increase, when an acknowledgement LWE increases.
+
+Once sliding window reaches maximum size $K$ it stops sending.
+
+Go back N also requires minimum buffer on receiver end.
+
+|     Protocol     | Send Window | Receive Window |
+| :--------------: | :---------: | :------------: |
+|     Idle RQ      |      1      |       1        |
+| Selective Repeat |      k      |       k        |
+|    Go back N     |      k      |       k        |
+
