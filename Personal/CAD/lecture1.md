@@ -10,7 +10,7 @@ A **subgraph** is a part of a graph. There are two types of importance to us:
 **Tree Branches** are branches in the tree. While, tree links are branches outside the tree.
 
 For a tree with **N** nodes & **B** branches and **L** links,
-$L = B – (N-1) = B – N + 1$
+$$L = B – (N-1) = B – N + 1$$
 
 There are 3 matrices to describe network graphs
 1. **Incidence Matrix**
@@ -25,8 +25,8 @@ There are 3 matrices to describe network graphs
 **Fundamental Loop** is a loop composed of some of the tree branches and a link. So for each graph the number of fundamnetal loops equals number of links.
 
 **Fundamental Loop Matrix** is a matrix whose each row represents one of the fundamental loops. <br/>
-$ M_{i,j} = relation(i^{th} Fundamental Loop , j^{th} Edge In Graph) $ <br/>
-Where $ relation(loop,edge) $ = 
+$M_{i,j} = relation(i^{th} Fundamental Loop , j^{th} Edge In Graph)$ <br/>
+Where $relation(loop,edge)$ = 
 - **+1** if *edge* has same direction as *loop*
 - **-1** if *edge* has opposite direction to *loop*
 - **0**  if *edge* is **NOT** in *loop*.
@@ -36,8 +36,8 @@ Given that loop's direction is same as link's direction.
 **Fundamental Cut Set** (f-cut set) is a minimal set of branches, if cut, they split a graph into two isolated graphs.<br/> 
 In our case a **fundamental cut set** contains only one branch and one or more links. Therefore, **no. of fundamental cut sets = no. of branches** <br/>
 **Fundamental Cut Set Matrix** is a matrix whose each row represents a fundamental cut set. <br/>
-$ M_{i,j} = relation(i^{th} f\ cut\ set , j^{th} edge) $ <br/>
-Where $ relation(f\ cut\ set,edge) = $
+$M_{i,j} = relation(i^{th} f\ cut\ set , j^{th} edge)$ <br/>
+Where $relation(f\ cut\ set,edge) =$
 - **0** for uncut edges.
 - **+1** for cut edges with same direction as cut branch.
 - **-1** for cut edges with opposite direction.
