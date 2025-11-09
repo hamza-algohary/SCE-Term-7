@@ -48,7 +48,7 @@ Frames have 2 types:
 **Frame Format** has 3 types:
 - **Variable Format-Variable Length** Fields have variable length, order and optional presence. (Needs identifiers/delimiters to mark frame start and end, and also each frame start).
 - **Fixed Format-Fixed Length** Fields order and length are fixed. (Needs only frame start identifier)
-- **Fixed Format-Variable Length** Fields have variable fixed order but variable length. (Needs to mark everything except start of first field)
+- **Fixed Format-Variable Length** Fields have fixed order but variable length. (Needs to mark everything except start of first field)
 
 ![](media/chapter2.md/frame-format-types.png)
 
@@ -81,7 +81,7 @@ Stop & Wait is half duplex. It has two implementations:
 1. **Implicit Retransmission** No acknowledgment frame (ACK-frame) means an error. If acknowledgment is corrupted, sender sends another copy. Timeout at least = transmission + processing time of a frame and its acknowledgment.
 2. **Explicit Retransmission** Negative acknowledgment means an error. Receiver returns **ACK-frame** on success, and **NAK-frame** on error. A timeout is still needed to account for frame not reaching at all.
 
-Duplicate frames are determined thanks to **sequence number**. Then they are dicarded.
+Duplicate frames are determined thanks to **sequence number**. Then they are discarded.
 
 Link utilization is determined by **BER** (Bit Error Rate)
 
