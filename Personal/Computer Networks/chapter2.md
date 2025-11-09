@@ -37,8 +37,9 @@ A frame is usually composed of **header**, **data** and **trailer**.
 
 - **Flags** determine frame start and end
 - **Address** determines source and destination. 
-- **FCS** stands Frame Check Sequence.
 - **Control** contains control info like sequence number & receipt acknowledgement.
+- **FCS** stands for Frame Check Sequence.
+
 
 Frames have 2 types:
 1. Data Frame

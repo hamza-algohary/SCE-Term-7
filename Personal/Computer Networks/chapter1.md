@@ -31,6 +31,8 @@ Some standards are
 3. Open System Interconnection (**OSI**) reference model developed by ISO (International Organization for Standardization) and ITu-T.
 4. Internet Architecture.
 
+Both **SNA** and **DNA** are vendor specific.
+
 **OSI Layers** <br>
 1. **Application** like HTTP,FTP & SMTP
 2. **Presenstation** present information to applications handling formats conversions and encryption/decryption.
