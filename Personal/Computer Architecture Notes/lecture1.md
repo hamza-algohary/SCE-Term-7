@@ -68,7 +68,7 @@ Overall Speed Up depends on two factors:
 1. **Fraction Enhancement:** Fraction of the original computation time that takes advantage of the enhancement.
 2. **Speedup Enhancement** improvement gained by the enhanced execution mode for the optimized portion of the program
 
-$ Overall Speedup = \dfrac{Execution Time}{Execution Time After Enhancement} = \dfrac{1}{(1-Fraction Enhancement)+\dfrac{Fraction Enhancement}{Speedup Enhancement}} $
+$Overall Speedup = \dfrac{Execution Time}{Execution Time After Enhancement} = \dfrac{1}{(1-Fraction Enhancement)+\dfrac{Fraction Enhancement}{Speedup Enhancement}}$
 
 CPU Time = #instructions × Average Cycles per Instruction × Clock Cycle Time
 
@@ -82,7 +82,7 @@ Dependability Measures
     - **λ** Rate of failures = **1/MTTF**
     - **MTTR** Mean Time To Repair
     - **MTBF** Mean Time Between Failures = **MTTF + MTTR**  
-2. **Module Availability** = $ \dfrac{MTTF}{MTTR} $
+2. **Module Availability** = $\dfrac{MTTF}{MTTR}$
 
 --------------------------------------------------------------------
 
