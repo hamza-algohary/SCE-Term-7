@@ -26,7 +26,7 @@
 ### Means of Communications between CPU and Memory or IO Devices
 1. **Address Bus** 
     - A unidirectional bus used by the CPU to select a memory location or IO port.
-    - Number of bits in the address bus determines the maximum number of bytes of data in the memory that can be accessed
+    - Number of bits in the address bus determines the maximum number of addresses of data in the memory that can be accessed
 
 2. **Data Bus**
     - It's bidrectional.
