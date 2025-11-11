@@ -70,6 +70,8 @@ Overall Speed Up depends on two factors:
 
 $Overall Speedup = \dfrac{Execution Time}{Execution Time After Enhancement} = \dfrac{1}{(1-Fraction Enhancement)+\dfrac{Fraction Enhancement}{Speedup Enhancement}}$
 
+### !!!!!!!!!! Go see the examples !!!!!!!
+
 CPU Time = #instructions × Average Cycles per Instruction × Clock Cycle Time
 
 Benchmarks Types

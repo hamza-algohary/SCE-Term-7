@@ -10,7 +10,7 @@ A **Word** is the size of data moving in or out memory as a unit.
 
 <!--slide 4-->
 
-**Access Time** is max time between sending address and resonse (appearance of data for read or storing completion for write) 
+**Access Time** is max time between sending address and response (appearance of data for read or storing completion for write) 
 
 
 **Memory Cycle Time** is minimum period between two  successive requests. 
@@ -68,7 +68,7 @@ Quick Notes
 
 A **straightforward RAM IC design** will require **number of AND gates = number of addresses** and if every bit is addressable and word size is large that will cause read/write to take too many cycles.
 
-A better alternative is the **coincident selection design**. Instead of treating RAM as a single row, we treat is a square of words. With 2 decoders, one for row-select and one for column-select.
+A better alternative is the **coincident selection design**. Instead of treating RAM as a single row, we treat it as a square of words. With 2 decoders, one for row-select and one for column-select.
 
 If number of address lines $K$ is even, then number of addresses (in address space) is squarable. In that case each of row-decoder and column-decoder take $K/2$ address lines. Otherwise, column decoder takes an extra line.
 
