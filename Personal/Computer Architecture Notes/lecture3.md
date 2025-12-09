@@ -26,13 +26,13 @@ Both rows & columns addresses are stored in registers, which in turn are connect
 
 When a row is selected, it gets entirely read by an array of sense amplifiers, which also acts as a **row buffer (registers)**. Then when a column is selected, **column address decoder** selects target column from row register.
 
-![](media/lecture3/read-cycle.png)
+![](media/lecture3/read-cycle.png)<br>
 If **R/W** is on READ while column address is sent, the selected column from the row buffer is sent over data lines (OE has to be enabled). Also the read address is considered refreshed afterwards.
 
-![](media/lecture3/write-cycle.png)
+![](media/lecture3/write-cycle.png)<br>
 If on the other hand **R/W** is on WRITE, data on data lines is applied to selected column from row buffer (the sense amplifiers), which gets immediately reflected on the DRAM cells of the selected row.
 
-> As long as **RAS** is enabled it the transistors of the cells are ON.
+> As long as **RAS** is enabled the transistors of the cells are ON.
 
 **All the above operations in the DRAM protocol, are managed by DRAM controller, usually part of CPU, previously was a dedicated part.**
 
