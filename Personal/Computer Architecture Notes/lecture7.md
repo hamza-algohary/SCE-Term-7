@@ -10,8 +10,9 @@ CPU = Data Path + Control Unit
 A Datapath is defined by **registers**, **microoperations** and **control interface**.
 
 ### Arithmetic Logic Unit
-[ALU](media/lecture7/alu-block-diagram.png) is a combinational circuit for basic arithmetic and logic operations. [Example]()
+[ALU](media/lecture7/alu-block-diagram.png) is a combinational circuit for basic arithmetic and logic operations. [Here is a detailed example](examples/lecture7.md#3-alu-detailed-example)
 
 
 
-### UP NEXT: Slide 14 (re-read and proceed to slide 15)
+
+### UP NEXT: Logic Circuit from Slide 23 and Parallel Adder as well
