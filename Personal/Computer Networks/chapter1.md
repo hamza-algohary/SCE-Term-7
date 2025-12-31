@@ -7,7 +7,7 @@
 2. **Common Language**
 3. **Orderly Session**
 
-Subnetwork needs to provide functions for end systems know as **Transport- Oriented Function**, these are
+Subnetwork needs to provide functions for end systems know as **Transport-Oriented Function**, these are
 1. **Interaction with the subnetwork.** Specifying destination address, handling incoming connections and releasing connections.
 2. **Quality of transport service.** Specifying error rate, delay, throughput and cost. 
 3. **Conversion of signals.** Bits to electrical signals suitable for transportation.

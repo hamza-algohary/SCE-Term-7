@@ -37,8 +37,8 @@ $S2$ determines arithemtic or logic operation.
 For arithmetic operations
 - $S0$ & $S1$ makes second operand one of
   - all 0s
-  - B
-  - B complement
+  - $B$
+  - $\overline{B}$
   - all 1s
 - $Cin$ just gets fed to the adder
 
@@ -54,12 +54,18 @@ For arithmetic operations
 
 The [arithmetic circuit](../media/lecture7/arithmetic-circuit.png) is just a full adder, whose second operand is tampered with based on operation select.
 
+For [Logic Operations](../media/lecture7/alu-logic-operations-diagram.png) we may use just $S0$,$S1$ to select **AND**,**OR**,**NOT** or **XOR**
+
+
+
 ### 4. Design a parallel adder
 **Full Adder Circuit**  
 $S = A ⊕ B ⊕ Cin$  
 $Cout = (A ⋅ B) + (Cin ⋅ (A ⊕ B))$
 
-- $G_i → \text{Carry Generate}$  
-- $P_i → \text{Carry Propagate (ie: Cout=Cin)}$  
+- $G_i = A_i ⊕ B_i → \text{Carry Generate}$  
+- $P_i = A_i.B_i  → \text{Carry Propagate (ie:make Cout=Cin)}$  
 - $S_i = \text{partial sum} ⊕ C_{i}$  
 - $C_{i+1} = “G_i || P_i”$  
+
+Where $G_i$ is always the same for all stages, while $P_i$ is squashed into two layers only at each stage because it depends on previous carry (logically)

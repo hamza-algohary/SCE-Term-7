@@ -46,7 +46,7 @@ Frames have 2 types:
 2. Control Frame
 
 **Frame Format** has 3 types:
-- **Variable Format-Variable Length** Fields have variable length, order and optional presence. (Needs identifiers/delimiters to mark frame start and end, and also each frame start).
+- **Variable Format-Variable Length** Fields have variable length, order and optional presence. (Needs identifiers/delimiters to mark frame start and end, and also each field start).
 - **Fixed Format-Fixed Length** Fields order and length are fixed. (Needs only frame start identifier)
 - **Fixed Format-Variable Length** Fields have fixed order but variable length. (Needs to mark everything except start of first field)
 
