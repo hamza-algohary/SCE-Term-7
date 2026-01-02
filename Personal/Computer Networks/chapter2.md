@@ -69,13 +69,13 @@ Content error correction most common method is **Automatic Repeat Request (ARQ)*
 
 To measure the effectivenes of error control methods use **Residual Error Rate (RER)**. 
 
-### Idle RQ (Stop & Wait)
-
 **ARQ** has 2 basic types:
 1. **Idle RQ** also called **stop and wait**. (byte oriented transmission)
 2. **Continuous RQ** (bit oriented), employs:
     - **Selective Repeat**
     - **Go Back N**
+
+### Idle RQ (Stop & Wait)
 
 Stop & Wait is half duplex. It has two implementations:
 1. **Implicit Retransmission** No acknowledgment frame (ACK-frame) means an error. If acknowledgment is corrupted, sender sends another copy. Timeout at least = transmission + processing time of a frame and its acknowledgment.
