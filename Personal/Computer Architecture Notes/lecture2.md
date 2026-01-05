@@ -30,7 +30,7 @@ $k\ address\ lines \Rrightarrow 2^k\ words$
 A memory of capacity $m.n$ bits means it has:
 - $m$ **addresses**.
 - $n$ **bits per word**.
-- **Address Lines** $ k = \log_2{m} $.
+- **Address Lines** $k = \log_2{m}$.
 
 Important Prefixes
 - $K = 1028$
@@ -62,7 +62,7 @@ To design a RAM IC, in addition to the RAM cells we need:
 2. **Tri-State Buffer** obeys enable input, disconnecting IC from bus (Hi-Z) when enable is false.
 
 Quick Notes
-- A **Word** is width of unit CPU handles in a single operation.
+- A **Word** is width of unit, CPU handles in a single operation.
 - A memory can be **Word Addressable** meaning every address points to a word, or it can be **Byte Addressable** meaning that every byte has an address.
 - The number of physically possible addresses is called **Address Space** and the number of addresses available within the memory's capacity is called **Address Range**.
 
@@ -83,5 +83,3 @@ $\text{chips per column} = \text{address space ratio}$
 
 We need a decoder, whose output = number of chips per column.
 
-
-**Up Next** slide 30
