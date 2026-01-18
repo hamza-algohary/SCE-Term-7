@@ -108,12 +108,12 @@ Where,
 [Proof](media/chapter2.md/average-transmission-proof.png)
 
 In implicit retransmission,
-$$ Tt = (N_r - 1)To + Tix + 2Tp , $$
+$$ T_t = (N_r - 1)T_o + T_ix + 2T_p , $$
 $$ \text{where To is time out interval.} $$
-$$ U = \frac{Tix}{(N_r - 1)To + Tix + 2Tp} = \frac{1-Pf}{(1+2a)(1+Pf)+Pf(To/Tix)}$$
+$$ U = \frac{T_{ix}}{(N_r - 1)T_o + T_{ix} + 2T_p} = \frac{1-P_f}{(1+2a)(1+P_f)+P_f\frac{T_o}{Tix}}$$
 In explicit retransmission,
-$$ Tt = N_r(Tix + 2Tp) $$
-$$ U = \frac{Tix}{N_r(Tix + 2Tp)} = \frac{1-Pf}{1 + 2a}$$
+$$ Tt = N_r(T_{ix} + 2T_p) $$
+$$ U = \frac{T_{ix}}{N_r(T_{ix} + 2T_p)} = \frac{1-P_f}{1 + 2a}$$
 
 Major advantage of Idle RQ is requiring minimum buffer storage on both ends, since it only requires sender to to be able to resend last sent frame, and for receiver to retain only sequence number of last received frame.
 
@@ -151,5 +151,5 @@ Go back N also requires minimum buffer on receiver end.
 | :--------------: | :---------: | :------------: |
 |     Idle RQ      |      1      |       1        |
 | Selective Repeat |      k      |       k        |
-|    Go back N     |      k      |       k        |
+|    Go back N     |      k      |       1        |
 

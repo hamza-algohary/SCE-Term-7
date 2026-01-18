@@ -9,10 +9,10 @@
 
 For example here is a context free grammar describing a list of digits separated by plus or minus.
 
-```
+```javascript
 list => list operation digit | digit
 operation => "+" | "-"
-digit => "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|8"|"9"
+digit => "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
 ```
 Each line here represents a production.
 The non-terminals here are **list**,**digit** and **operation**. While the terminals are everything between quotes.
@@ -70,3 +70,4 @@ Read More:
 
 
 #### Up Next: 2.2.5 Associativity of Operators (page 71)
+
